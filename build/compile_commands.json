@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/pi/embed2/Opdracht-3-MQTT/build",
-  "command": "/bin/gcc-8   -g   -o CMakeFiles/Opdracht3.dir/main.c.o   -c /home/pi/embed2/Opdracht-3-MQTT/main.c",
-  "file": "/home/pi/embed2/Opdracht-3-MQTT/main.c"
+  "command": "/bin/gcc-8  -I/usr/include/mariadb -I/usr/include/mariadb/mysql  -g   -o CMakeFiles/Opdracht3.dir/sub.c.o   -c /home/pi/embed2/Opdracht-3-MQTT/sub.c",
+  "file": "/home/pi/embed2/Opdracht-3-MQTT/sub.c"
 }
 ]

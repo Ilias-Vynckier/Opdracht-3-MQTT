@@ -4,12 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/pi/embed2/Opdracht-3-MQTT/main.c" "/home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles/Opdracht3.dir/main.c.o"
+  "/home/pi/embed2/Opdracht-3-MQTT/sub.c" "/home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles/Opdracht3.dir/sub.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/include/mariadb"
+  "/usr/include/mariadb/mysql"
   )
 
 # Targets to which this target links.

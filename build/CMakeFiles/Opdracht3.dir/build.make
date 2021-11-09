@@ -57,27 +57,27 @@ include CMakeFiles/Opdracht3.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Opdracht3.dir/flags.make
 
-CMakeFiles/Opdracht3.dir/main.c.o: CMakeFiles/Opdracht3.dir/flags.make
-CMakeFiles/Opdracht3.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Opdracht3.dir/main.c.o"
-	/bin/gcc-8 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Opdracht3.dir/main.c.o   -c /home/pi/embed2/Opdracht-3-MQTT/main.c
+CMakeFiles/Opdracht3.dir/sub.c.o: CMakeFiles/Opdracht3.dir/flags.make
+CMakeFiles/Opdracht3.dir/sub.c.o: ../sub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Opdracht3.dir/sub.c.o"
+	/bin/gcc-8 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Opdracht3.dir/sub.c.o   -c /home/pi/embed2/Opdracht-3-MQTT/sub.c
 
-CMakeFiles/Opdracht3.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Opdracht3.dir/main.c.i"
-	/bin/gcc-8 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/embed2/Opdracht-3-MQTT/main.c > CMakeFiles/Opdracht3.dir/main.c.i
+CMakeFiles/Opdracht3.dir/sub.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Opdracht3.dir/sub.c.i"
+	/bin/gcc-8 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pi/embed2/Opdracht-3-MQTT/sub.c > CMakeFiles/Opdracht3.dir/sub.c.i
 
-CMakeFiles/Opdracht3.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Opdracht3.dir/main.c.s"
-	/bin/gcc-8 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/embed2/Opdracht-3-MQTT/main.c -o CMakeFiles/Opdracht3.dir/main.c.s
+CMakeFiles/Opdracht3.dir/sub.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Opdracht3.dir/sub.c.s"
+	/bin/gcc-8 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pi/embed2/Opdracht-3-MQTT/sub.c -o CMakeFiles/Opdracht3.dir/sub.c.s
 
 # Object files for target Opdracht3
 Opdracht3_OBJECTS = \
-"CMakeFiles/Opdracht3.dir/main.c.o"
+"CMakeFiles/Opdracht3.dir/sub.c.o"
 
 # External object files for target Opdracht3
 Opdracht3_EXTERNAL_OBJECTS =
 
-Opdracht3: CMakeFiles/Opdracht3.dir/main.c.o
+Opdracht3: CMakeFiles/Opdracht3.dir/sub.c.o
 Opdracht3: CMakeFiles/Opdracht3.dir/build.make
 Opdracht3: CMakeFiles/Opdracht3.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Opdracht3"

@@ -520,32 +520,32 @@ ExperimentalConfigure/fast:
 	$(MAKE) -f CMakeFiles/ExperimentalConfigure.dir/build.make CMakeFiles/ExperimentalConfigure.dir/build
 .PHONY : ExperimentalConfigure/fast
 
-main.o: main.c.o
+sub.o: sub.c.o
 
-.PHONY : main.o
+.PHONY : sub.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/Opdracht3.dir/build.make CMakeFiles/Opdracht3.dir/main.c.o
-.PHONY : main.c.o
+sub.c.o:
+	$(MAKE) -f CMakeFiles/Opdracht3.dir/build.make CMakeFiles/Opdracht3.dir/sub.c.o
+.PHONY : sub.c.o
 
-main.i: main.c.i
+sub.i: sub.c.i
 
-.PHONY : main.i
+.PHONY : sub.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/Opdracht3.dir/build.make CMakeFiles/Opdracht3.dir/main.c.i
-.PHONY : main.c.i
+sub.c.i:
+	$(MAKE) -f CMakeFiles/Opdracht3.dir/build.make CMakeFiles/Opdracht3.dir/sub.c.i
+.PHONY : sub.c.i
 
-main.s: main.c.s
+sub.s: sub.c.s
 
-.PHONY : main.s
+.PHONY : sub.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/Opdracht3.dir/build.make CMakeFiles/Opdracht3.dir/main.c.s
-.PHONY : main.c.s
+sub.c.s:
+	$(MAKE) -f CMakeFiles/Opdracht3.dir/build.make CMakeFiles/Opdracht3.dir/sub.c.s
+.PHONY : sub.c.s
 
 # Help Target
 help:
@@ -587,9 +587,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... ExperimentalUpdate"
 	@echo "... ExperimentalConfigure"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... sub.o"
+	@echo "... sub.i"
+	@echo "... sub.s"
 .PHONY : help
 
 
