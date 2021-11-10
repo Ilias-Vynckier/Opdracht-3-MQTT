@@ -10,6 +10,7 @@
 #define QOS 1
 #define TIMEOUT 10000L
 
+ MYSQL *con;
 
 volatile MQTTClient_deliveryToken deliveredtoken;
 void delivered(void *context, MQTTClient_deliveryToken dt)
@@ -46,7 +47,7 @@ void connlost(void *context, char *cause)
 
 int main(int argc, char* argv[])
 {
-    MYSQL *con = mysql_init(NULL);
+    con = mysql_init(NULL);
 	printf("MySQL client version: %s\n", mysql_get_client_info());
 
 	if (con == NULL)
@@ -93,8 +94,6 @@ int main(int argc, char* argv[])
 int Register(Temprature) // libgpiod
 {
 	int flag = 0;
-
-    
 
 	while (flag == 0)
 	{
