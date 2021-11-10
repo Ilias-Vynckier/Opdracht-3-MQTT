@@ -144,17 +144,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Opdracht3
+# Target rules for targets named Opdracht3.cgi
 
 # Build rule for target.
-Opdracht3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Opdracht3
-.PHONY : Opdracht3
+Opdracht3.cgi: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Opdracht3.cgi
+.PHONY : Opdracht3.cgi
 
 # fast build rule for target.
-Opdracht3/fast:
-	$(MAKE) -f CMakeFiles/Opdracht3.dir/build.make CMakeFiles/Opdracht3.dir/build
-.PHONY : Opdracht3/fast
+Opdracht3.cgi/fast:
+	$(MAKE) -f CMakeFiles/Opdracht3.cgi.dir/build.make CMakeFiles/Opdracht3.cgi.dir/build
+.PHONY : Opdracht3.cgi/fast
 
 #=============================================================================
 # Target rules for targets named ContinuousSubmit
@@ -526,7 +526,7 @@ sub.o: sub.c.o
 
 # target to build an object file
 sub.c.o:
-	$(MAKE) -f CMakeFiles/Opdracht3.dir/build.make CMakeFiles/Opdracht3.dir/sub.c.o
+	$(MAKE) -f CMakeFiles/Opdracht3.cgi.dir/build.make CMakeFiles/Opdracht3.cgi.dir/sub.c.o
 .PHONY : sub.c.o
 
 sub.i: sub.c.i
@@ -535,7 +535,7 @@ sub.i: sub.c.i
 
 # target to preprocess a source file
 sub.c.i:
-	$(MAKE) -f CMakeFiles/Opdracht3.dir/build.make CMakeFiles/Opdracht3.dir/sub.c.i
+	$(MAKE) -f CMakeFiles/Opdracht3.cgi.dir/build.make CMakeFiles/Opdracht3.cgi.dir/sub.c.i
 .PHONY : sub.c.i
 
 sub.s: sub.c.s
@@ -544,7 +544,7 @@ sub.s: sub.c.s
 
 # target to generate assembly for a file
 sub.c.s:
-	$(MAKE) -f CMakeFiles/Opdracht3.dir/build.make CMakeFiles/Opdracht3.dir/sub.c.s
+	$(MAKE) -f CMakeFiles/Opdracht3.cgi.dir/build.make CMakeFiles/Opdracht3.cgi.dir/sub.c.s
 .PHONY : sub.c.s
 
 # Help Target
@@ -555,7 +555,7 @@ help:
 	@echo "... depend"
 	@echo "... test"
 	@echo "... package"
-	@echo "... Opdracht3"
+	@echo "... Opdracht3.cgi"
 	@echo "... ContinuousSubmit"
 	@echo "... ContinuousBuild"
 	@echo "... ExperimentalSubmit"

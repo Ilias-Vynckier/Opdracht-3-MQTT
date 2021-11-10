@@ -1,6 +1,6 @@
 /home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles/test.dir
 /home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles/package.dir
-/home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles/Opdracht3.dir
+/home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles/Opdracht3.cgi.dir
 /home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles/ContinuousSubmit.dir
 /home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles/ContinuousBuild.dir
 /home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles/ExperimentalSubmit.dir

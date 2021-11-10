@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/pi/embed2/Opdracht-3-MQTT/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Opdracht3.dir/all
+all: CMakeFiles/Opdracht3.cgi.dir/all
 
 .PHONY : all
 
@@ -63,7 +63,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Opdracht3.dir/clean
+clean: CMakeFiles/Opdracht3.cgi.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
 clean: CMakeFiles/ContinuousBuild.dir/clean
 clean: CMakeFiles/ExperimentalSubmit.dir/clean
@@ -96,31 +96,31 @@ clean: CMakeFiles/ExperimentalConfigure.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Opdracht3.dir
+# Target rules for target CMakeFiles/Opdracht3.cgi.dir
 
 # All Build rule for target.
-CMakeFiles/Opdracht3.dir/all:
-	$(MAKE) -f CMakeFiles/Opdracht3.dir/build.make CMakeFiles/Opdracht3.dir/depend
-	$(MAKE) -f CMakeFiles/Opdracht3.dir/build.make CMakeFiles/Opdracht3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles --progress-num=1,2 "Built target Opdracht3"
-.PHONY : CMakeFiles/Opdracht3.dir/all
+CMakeFiles/Opdracht3.cgi.dir/all:
+	$(MAKE) -f CMakeFiles/Opdracht3.cgi.dir/build.make CMakeFiles/Opdracht3.cgi.dir/depend
+	$(MAKE) -f CMakeFiles/Opdracht3.cgi.dir/build.make CMakeFiles/Opdracht3.cgi.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles --progress-num=1,2 "Built target Opdracht3.cgi"
+.PHONY : CMakeFiles/Opdracht3.cgi.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Opdracht3.dir/rule: cmake_check_build_system
+CMakeFiles/Opdracht3.cgi.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Opdracht3.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Opdracht3.cgi.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/embed2/Opdracht-3-MQTT/build/CMakeFiles 0
-.PHONY : CMakeFiles/Opdracht3.dir/rule
+.PHONY : CMakeFiles/Opdracht3.cgi.dir/rule
 
 # Convenience name for target.
-Opdracht3: CMakeFiles/Opdracht3.dir/rule
+Opdracht3.cgi: CMakeFiles/Opdracht3.cgi.dir/rule
 
-.PHONY : Opdracht3
+.PHONY : Opdracht3.cgi
 
 # clean rule for target.
-CMakeFiles/Opdracht3.dir/clean:
-	$(MAKE) -f CMakeFiles/Opdracht3.dir/build.make CMakeFiles/Opdracht3.dir/clean
-.PHONY : CMakeFiles/Opdracht3.dir/clean
+CMakeFiles/Opdracht3.cgi.dir/clean:
+	$(MAKE) -f CMakeFiles/Opdracht3.cgi.dir/build.make CMakeFiles/Opdracht3.cgi.dir/clean
+.PHONY : CMakeFiles/Opdracht3.cgi.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/ContinuousSubmit.dir

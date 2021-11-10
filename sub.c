@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <mysql.h>
+#include <time.h>
 #include "MQTTClient.h"
 #define ADDRESS "tcp://broker.emqx.io:1883"
 #define CLIENTID "emqx_test"
@@ -10,7 +11,7 @@
 #define QOS 1
 #define TIMEOUT 10000L
 
- MYSQL *con;
+MYSQL *con;
 
 volatile MQTTClient_deliveryToken deliveredtoken;
 void delivered(void *context, MQTTClient_deliveryToken dt)
@@ -95,10 +96,12 @@ int Register(Temprature) // libgpiod
 {
 	int flag = 0;
 
+    int tijd = timeStamp();
+
 	while (flag == 0)
 	{
         char querry[49]="";
-        sprintf(querry," INSERT INTO state (Temprature) VALUES ('%s');",Temprature);
+        sprintf(querry," INSERT INTO state (Temprature,Time) VALUES ('%s','%s');",Temprature,tijd);
 
 		printf("%s\r\n", querry);
 
@@ -117,4 +120,18 @@ void finish_with_error(MYSQL *con)
 	fprintf(stderr, "%s\n", mysql_error(con));
 	mysql_close(con);
 	exit(1);
+}
+
+int timeStamp()
+{
+  time_t rawtime;
+  struct tm *timeinfo;
+
+  time(&rawtime);
+  timeinfo = localtime(&rawtime);
+
+  char *foo = asctime(timeinfo); // verwijderd de \n\r die je bij de asctime() is.
+  foo[strlen(foo) - 1] = 0;
+
+  return foo;
 }

@@ -315,6 +315,12 @@ MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
 MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
 //Value Computed by CMake
+Opdracht3.cgi_BINARY_DIR:STATIC=/home/pi/embed2/Opdracht-3-MQTT/build
+
+//Value Computed by CMake
+Opdracht3.cgi_SOURCE_DIR:STATIC=/home/pi/embed2/Opdracht-3-MQTT
+
+//Value Computed by CMake
 Opdracht3_BINARY_DIR:STATIC=/home/pi/embed2/Opdracht-3-MQTT/build
 
 //Value Computed by CMake

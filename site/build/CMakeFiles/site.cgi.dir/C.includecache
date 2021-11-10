@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/embed2/Opdracht-3-MQTT/site/site.c
+mysql.h
+-
+stdio.h
+-
+
+/usr/include/mariadb/ma_list.h
+
+/usr/include/mariadb/mariadb_com.h
+
+/usr/include/mariadb/mariadb_ctype.h
+ctype.h
+-
+
+/usr/include/mariadb/mariadb_stmt.h
+
+/usr/include/mariadb/mariadb_version.h
+custom_conf.h
+-
+
+/usr/include/mariadb/mysql.h
+stdarg.h
+-
+sys/types.h
+-
+mariadb_com.h
+/usr/include/mariadb/mariadb_com.h
+mariadb_version.h
+/usr/include/mariadb/mariadb_version.h
+ma_list.h
+/usr/include/mariadb/ma_list.h
+mariadb_ctype.h
+/usr/include/mariadb/mariadb_ctype.h
+mariadb_stmt.h
+/usr/include/mariadb/mariadb_stmt.h
+

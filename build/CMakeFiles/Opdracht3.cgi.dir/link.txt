@@ -1,0 +1,1 @@
+/bin/gcc-8 -g  -rdynamic CMakeFiles/Opdracht3.cgi.dir/sub.c.o  -o Opdracht3.cgi  -lpaho-mqtt3c -lmariadb 
