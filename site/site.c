@@ -1,11 +1,11 @@
 #include <mysql.h>
 #include <stdio.h>
 
-
 int main(void)
 {
     printf("Content-type: text/html\n\n");
-    printf("<html><title>Hello</title><body>\n");
+    printf("<html><title>Hello</title>\n");
+    printf("<style>span{ font-family: Comic Sans MS;}</style><body>\n");
     printf("Goodbye Cruel World\n");
     printf("</body></html>");
 
@@ -26,7 +26,9 @@ int main(void)
         exit(1);
     }
 
+    
     shtable(con);
+    
 }
 
 int shtable(con)
@@ -48,19 +50,22 @@ int shtable(con)
     MYSQL_ROW row;
     MYSQL_FIELD *field;
 
+    printf("<table>\n");
+    
     while ((row = mysql_fetch_row(result)))
     {
+        printf("\n");
         for (int i = 0; i < num_fields; i++)
         {
             if (i == 0)
             {
                 while (field = mysql_fetch_field(result))
                 {
-                    printf("%s ", field->name);
+                    printf("<th>%s ", field->name);
                 }
-                printf("<br>");
+                printf("<tr>\n");
             }
-            printf("%s  ", row[i] ? row[i] : "NULL");
+            printf("<td>%s  ", row[i] ? row[i] : "NULL");
         }
     }
 
@@ -72,7 +77,7 @@ int shtable(con)
 
 void finish_with_error(MYSQL *con)
 {
-	fprintf(stderr, "%s\n", mysql_error(con));
-	mysql_close(con);
-	exit(1);
+    fprintf(stderr, "%s\n", mysql_error(con));
+    mysql_close(con);
+    exit(1);
 }
