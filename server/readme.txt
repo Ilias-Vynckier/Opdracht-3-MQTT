@@ -1,1 +1,0 @@
-Hier komen de files voor het server gedeelte.

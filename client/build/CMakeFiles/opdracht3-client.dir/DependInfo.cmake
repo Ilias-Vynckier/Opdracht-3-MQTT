@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/pi/opd3/Embed2-opdracht3/client/MQTTClient_publish.c" "/home/pi/opd3/Embed2-opdracht3/client/build/CMakeFiles/client.dir/MQTTClient_publish.c.o"
+  "/home/pi/Embed2-opdracht3/client/MQTTClient_publish.c" "/home/pi/Embed2-opdracht3/client/build/CMakeFiles/opdracht3-client.dir/MQTTClient_publish.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
