@@ -1,6 +1,8 @@
 # Embedded Systems 2 opdracht 3.
 
-## first install paho mqtt librqry + examples
+    Read temperature of TC74 zith the client and send  the value over MQTT. The Server receives the value over MQTT and places it in a database.
+
+## First install paho mqtt librqry + examples
 
     mkdir MQTTClients
     cd MQTTClients
