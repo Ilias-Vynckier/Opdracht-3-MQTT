@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/opd3/Embed2-opdracht3/client/MQTTClient_publish.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+time.h
+-
+MQTTClient.h
+/home/pi/opd3/Embed2-opdracht3/client/MQTTClient.h
+wiringPiI2C.h
+-
+
