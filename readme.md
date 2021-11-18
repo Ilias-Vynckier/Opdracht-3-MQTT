@@ -14,5 +14,11 @@
   Install library for i2c
   
     sudo apt-get install wiringpi
+   
+  Build file and execute
+  
+    cd build
+    sudo make
+    sudo ./opdracht3-client
     
 ## Sever
