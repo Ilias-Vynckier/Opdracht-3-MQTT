@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/opdracht3-client.dir/MQTTClient_publish.c.o  -o opdracht3-client  -lpaho-mqtt3c -lwiringPi 

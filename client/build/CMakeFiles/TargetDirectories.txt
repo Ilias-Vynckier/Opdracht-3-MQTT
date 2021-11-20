@@ -1,0 +1,3 @@
+/home/pi/Embed2-opdracht3/client/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Embed2-opdracht3/client/build/CMakeFiles/opdracht3-client.dir
+/home/pi/Embed2-opdracht3/client/build/CMakeFiles/edit_cache.dir
