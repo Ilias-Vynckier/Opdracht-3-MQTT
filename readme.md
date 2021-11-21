@@ -13,6 +13,12 @@
 
 ## Client
 
+  Enable i2c
+    
+    sudo raspi-config
+    5. Interfacing options
+    P5 I2C ENABLE/DISABLE
+
   Install library for i2c
   
     sudo apt-get install wiringpi
