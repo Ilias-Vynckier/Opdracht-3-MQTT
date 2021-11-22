@@ -9,7 +9,8 @@
     sudo git clone https://github.com/janderholm/paho.mqtt.c.git
     cd paho.mqtt.c
     sudo apt-get install libssl-dev
-    sudo makesudo make install
+    sudo make
+    sudo make install
 
 ## Client
 
